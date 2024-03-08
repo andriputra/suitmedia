@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, NavDropdown, Container, Button, Form } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container, Button, Form, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +29,7 @@ const NavigationBar = () => {
           <FontAwesomeIcon icon={faBars} />
         </Navbar.Toggle>
         <Navbar.Brand href="#home" className="me-auto">
-            <img src={require('../../src/assets/img/logo.png')} alt="image"/>
+            <Image src={require('../../src/assets/img/logo.png')} alt="image"/>
         </Navbar.Brand>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

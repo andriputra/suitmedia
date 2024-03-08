@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +19,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="box-content-hero image">
-                    <img src={require('../../src/assets/img/dog-banner.png')} className="img-fluid" alt="image"/>
+                    <Image src={require('../../src/assets/img/dog-banner.png')} className="img-fluid" alt="banner dog"/>
                 </div>
             </div>
         </div>

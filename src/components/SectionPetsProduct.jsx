@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -88,7 +88,7 @@ const PetsProduct = () => {
                     {prodData.map((prod, index) => (
                         <div className="pets-product" key={index}>
                             <div className="pets-picture">
-                                <img src={prod.image} className="img-fluid" alt={prod.title} />
+                                <Image src={prod.image} className="img-fluid" alt={prod.title} />
                             </div>
                             <div className="pets-description">
                                 <div className="title"><strong>{prod.title}</strong></div>
@@ -99,8 +99,8 @@ const PetsProduct = () => {
                                 </div>
                                 <div className="price"><strong>{prod.price}</strong></div>
                                 <div className="label">
-                                    <img src={require('../assets/img/gift.png')} alt="gift" className="img-fluid"/>
-                                    <img src={require('../assets/img/dot.png')} alt="dot" className="img-fluid"/>
+                                    <Image src={require('../assets/img/gift.png')} alt="gift" className="img-fluid"/>
+                                    <Image src={require('../assets/img/dot.png')} alt="dot" className="img-fluid"/>
                                     <span><strong>{prod.label}</strong></span>
                                 </div>
                             </div>

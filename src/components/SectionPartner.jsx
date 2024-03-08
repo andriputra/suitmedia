@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,13 +17,13 @@ const Partner = () => {
                     </div>
                 </div>
                 <div className="box-partner-product">
-                    <img src={require('../assets/img/part1.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part2.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part3.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part4.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part5.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part6.png')} alt="partner" className="img-fluid"/>
-                    <img src={require('../assets/img/part7.png')} alt="partner" className="img-fluid"/>
+                    <Image src={require('../assets/img/part1.png')} alt="partner image 1" className="img-fluid"/>
+                    <Image src={require('../assets/img/part2.png')} alt="partner image 2" className="img-fluid"/>
+                    <Image src={require('../assets/img/part3.png')} alt="partner image 3" className="img-fluid"/>
+                    <Image src={require('../assets/img/part4.png')} alt="partner image 4" className="img-fluid"/>
+                    <Image src={require('../assets/img/part5.png')} alt="partner image 5" className="img-fluid"/>
+                    <Image src={require('../assets/img/part6.png')} alt="partner image 6" className="img-fluid"/>
+                    <Image src={require('../assets/img/part7.png')} alt="partner image 7" className="img-fluid"/>
                 </div>
             </div>
         </section>

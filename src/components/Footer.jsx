@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import SubscribeForm from '../components/SubscribeForm';
+import { Image } from 'react-bootstrap';
 
 class Footer extends React.Component {
     constructor(props) {
@@ -34,7 +35,7 @@ class Footer extends React.Component {
                     <div className="footer-copyright hidden-xs">
                         <div className="footer-copyright-item">© {this.state.currentYear} Monito. All rights reserved.</div>
                         <div className="footer-copyright-item">
-                            <img src={require('./../assets/img/logo.png')} alt="Deskripsi Gambar" />
+                            <Image src={require('./../assets/img/logo.png')} alt="Deskripsi Gambar" />
                         </div>
                         <div className="footer-copyright-item list-policy">
                             <a href="#!">Terms of Service</a>
@@ -43,7 +44,7 @@ class Footer extends React.Component {
                     </div>
                     <div className="footer-copyright text-center hidden-lg">
                         <div className="footer-copyright-item">
-                            <img src={require('./../assets/img/logo.png')} alt="Deskripsi Gambar" />
+                            <Image src={require('./../assets/img/logo.png')} alt="Deskripsi Gambar" />
                         </div>
                         <div className="footer-copyright-item list-policy">
                             <a href="#!">Terms of Service</a>

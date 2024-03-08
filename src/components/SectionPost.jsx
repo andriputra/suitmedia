@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -41,7 +41,7 @@ const Post = () => {
                     {postData.map((post, index) => (
                         <div className="post-product" key={index}>
                             <div className="post-picture">
-                                <img src={post.image} className="img-fluid" alt={post.title} />
+                                <Image src={post.image} className="img-fluid" alt={post.title} />
                             </div>
                             <div className="post-description">
                                 <div className="info">

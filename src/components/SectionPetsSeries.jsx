@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -80,7 +80,7 @@ const PetsSection = () => {
                     {petsData.map((pet, index) => (
                         <div className="pets-product" key={index}>
                             <div className="pets-picture">
-                                <img src={pet.image} className="img-fluid" alt={pet.title} />
+                                <Image src={pet.image} className="img-fluid" alt={pet.title} />
                             </div>
                             <div className="pets-description">
                                 <div className="title"><strong>{pet.title}</strong></div>

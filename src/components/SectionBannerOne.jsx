@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
+import { Image, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 
@@ -9,7 +9,7 @@ const SectionBannerOne = () => {
             <div className="container">
                 <div className="banner-cta">
                     <div className="banner-cta image">
-                        <img src={require('../../src/assets/img/section-dog.png')} className="img-fluid" alt="image"/>
+                        <Image src={require('../../src/assets/img/section-dog.png')} className="img-fluid" alt="paw dog"/>
                     </div>
                     <div className="banner-cta text">
                         <h1>One more friend</h1>
