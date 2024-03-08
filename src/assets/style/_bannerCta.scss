@@ -7,7 +7,7 @@
         background-color: $secondary-color;
         border-radius: 20px;
         @media only screen and (min-width: 320px) and (max-width: 780px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         &.text{
             flex-direction: column;
@@ -19,6 +19,9 @@
             padding-left: 40px;
             @media only screen and (min-width: 320px) and (max-width: 780px) {
                 margin-bottom: 20px;
+                padding: 20px;
+                text-align: center;
+                align-items: center;
             }
             h1{
                 font-size: 60px;
@@ -27,7 +30,7 @@
                 position: relative;
                 z-index: 2;
                 @media only screen and (min-width: 320px) and (max-width: 780px) {
-                    font-size: 41px;
+                    font-size: 36px;
                 }
             }
             h3{
@@ -36,7 +39,7 @@
                 text-transform: capitalize;
                 position: relative;
                 @media only screen and (min-width: 320px) and (max-width: 780px) {
-                    font-size: 28px;
+                    font-size: 24px;
                 }
             }
             p{
@@ -49,6 +52,7 @@
                 text-align: right;
                 @media only screen and (min-width: 320px) and (max-width: 780px) {
                     font-size: 12px;
+                    margin: 10px 0px 20px;
                 }
             }
             &::before{
@@ -62,6 +66,14 @@
                 right: -2px;
                 top: -18px;
                 border-radius: 0px 20px 20px 0px;
+                @media only screen and (min-width: 320px) and (max-width: 780px) {
+                    background-image: url('../img/mob-rectangel.png');
+                    top: 0px;
+                    right: 0px;
+                    border-top-left-radius: 17px;
+                    border-top-right-radius: 17px;
+                    height: 345px;
+                }
             }
         }
         &.image{
@@ -82,6 +94,10 @@
                 position: absolute;
                 left: 0px;
                 bottom: 0px;
+                @media only screen and (min-width: 320px) and (max-width: 780px) {
+                    background-image: url('../img/mob-rectangel-bottom.png');
+                    height: 164px;
+                }
             }
         }
         &-action{
@@ -97,6 +113,10 @@
                     background-color: $secondary-color;
                     color: $white-color;
                 }
+                @media only screen and (min-width: 320px) and (max-width: 780px) {
+                    padding: 9px 26px;
+                    font-size: 14px;
+                }
             }
             .btn-primary{
                 background-color: $secondary-color;
@@ -104,6 +124,47 @@
                 &:hover{
                     background-color: $alternative-color;
                     border-color: $alternative-color;
+                }
+            }
+        }
+    }
+    &.two{
+        .banner-cta{
+            background-color: $alternative-color;
+            @media only screen and (min-width: 320px) and (max-width: 780px) {
+                flex-direction: column;
+            }
+            &.text{
+                align-items: flex-start;
+                @media only screen and (min-width: 320px) and (max-width: 780px) {
+                    align-items: center;
+                }
+                h3{
+                    font-size: 40px;
+                    @media only screen and (min-width: 320px) and (max-width: 780px) {
+                        font-size: 24px;
+                    }
+                }
+                p{
+                    text-align: left;
+                    width: 60%;
+                    @media only screen and (min-width: 320px) and (max-width: 780px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                &::before{
+                    background-image: url('../img/paw-bg-left.png');
+                    top: -50px;
+                    left: 0px;
+                    height: 383px;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                }
+            }
+            &.image{
+                &::before{
+                    background-image: url('../img/paw-bg-right.png');
                 }
             }
         }

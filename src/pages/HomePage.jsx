@@ -1,8 +1,11 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import PetsSection from '../components/PetsSeries';
-import PetsProduct from '../components/PetsProduct';
+import Hero from '../components/SectionHero';
+import PetsSection from '../components/SectionPetsSeries';
+import PetsProduct from '../components/SectionPetsProduct';
 import SectionBannerOne from '../components/SectionBannerOne';
+import Partner from '../components/SectionPartner';
+import SectionBannerTwo from '../components/SectionBannerTwo';
+import Post from '../components/SectionPost';
 
 const HomePage = () => {
   return (
@@ -11,6 +14,9 @@ const HomePage = () => {
       <PetsSection/>
       <SectionBannerOne/>
       <PetsProduct/>
+      <Partner/>
+      <SectionBannerTwo/>
+      <Post/>
     </div>
   );
 };

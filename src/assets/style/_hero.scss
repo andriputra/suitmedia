@@ -64,6 +64,9 @@
                     z-index: -1;
                     left: -11px;
                     top: 6px;
+                    @media only screen and (min-width: 320px) and (max-width: 780px) {
+                        content: none;
+                    }
                 }
             }
             h3{

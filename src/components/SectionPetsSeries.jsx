@@ -93,6 +93,9 @@ const PetsSection = () => {
                             </div>
                         </div>
                     ))}
+                    <div className="column-title-right show-xs">
+                        <Nav.Link className="btn btn-outline-primary" href="#!">View More <FontAwesomeIcon icon={faChevronRight} /></Nav.Link>
+                    </div>
                 </div>
             </div>
         </section>
