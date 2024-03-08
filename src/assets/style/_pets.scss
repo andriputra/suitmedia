@@ -1,0 +1,89 @@
+.pets-sale{
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .column-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        &-left{
+            .title-up{
+                margin-bottom: 0px;
+                color: $text-black;
+            }
+            .title-bottom{
+                color: $text-black;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+        &-right{
+            .btn-outline-primary{
+                padding: 14px 28px;
+                font-size: 14px;
+                border: 1px solid $text-black;
+                color: $text-black;
+                border-radius: 30px;
+                display: flex;
+                column-gap: 20px;
+                align-items: center;
+                &:hover{
+                    background-color: $secondary-color;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .box-pets-product{
+        display: flex;
+        column-gap: 20px;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        @media only screen and (min-width: 320px) and (max-width: 780px) {
+            column-gap: 12px;
+            row-gap: 12px;
+        }
+        .pets-product{
+            flex: 23.8% 0 0;
+            background-color: $white-color;
+            box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            padding: 8px;
+            @media only screen and (min-width: 320px) and (max-width: 780px) {
+                flex: 47.1% 0 0;
+            }
+            .pets-picture{
+                overflow: hidden;
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    transition: all 1s;
+                }
+            }
+            .pets-description{
+                padding: 8px;
+                .info{
+                    color: $netral-color-soft;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 4px;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+                .pets-picture{
+                    img{
+                        transform: scale(1.1);
+                        transition: all 1s;
+                    }
+                }
+            }
+        }
+    }
+    .hidden-xs{
+        @media only screen and (min-width: 320px) and (max-width: 780px) {
+            display: none;
+        }
+    }
+}
